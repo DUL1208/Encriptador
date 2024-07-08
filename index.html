@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mex">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto Encriptador</title>
+</head>
+<body>
+    <nav>
+    <img class="marg" src="./assets/Logo.png" alt="logo">
+    </nav> 
+    <section>
+        <div class="row">
+            <div class="c-s-1 c-7 mar-3">
+              <textarea name="text" id="text" cols="20" rows="5" class="text-area" placeholder="Inserte el texto" autofocus></textarea>
+              <p class="mar-1" id="error">
+                <img src="./assets/Vector (2).png" alt="icono"> 
+                Solo letras minusculas y sin acentos
+              </p>
+              <div class="row mar-1">
+                <div class="c-5 c-s-2 mar-1">
+                  <button class="btn btn-primary pa-1" onclick="encriptar()">Encriptar</button>
+                </div>
+                <div class="c-5 c-s-2 mar-1 ">
+                  <button class="btn btn-info pa-1" onclick="desencriptar()">Desencriptar</button>
+                </div>
+              </div>  
+            </div>
+            <div class="c-s-2 c-4 mar-1 card card2">
+          
+                <img src="./assets/Muñeco.png" alt="imagen muneco" class="image imagen" id="imagen">
+                
+                <section class="row izq mar-4" id="resultado">
+                  <h1 class="centro">Ningun mensaje fue encontrado</h1>
+                  <p class="centro">Ingresa el texto que desees encriptar o descencriptar</p>
+                </section>
+                
+                <div class="c-12">
+                  <button class="btn-info pa-1 copiar" id="copiar" hidden>Copiar</button>
+                </div>
+              
+              </div>
+        </div>
+    </section>
+    <script src="encriptador.js"></script>
+</body>
+</html>
